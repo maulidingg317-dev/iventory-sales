@@ -61,6 +61,7 @@ Akun ini hanya data seeder untuk demo (bukan kredensial asli).
 | Role  | Email            | Password |
 |-------|------------------|----------|
 | Admin | admin@demo.test  | password |
+| Owner | owner@demo.test  | password |
 | Staff | staff@demo.test  | password |
 
 ## Catatan environment dan keamanan
