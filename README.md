@@ -33,7 +33,7 @@ PHP >= 8.1, Composer, MySQL/MariaDB, ekstensi PHP `pdo_mysql` (dan `pdo_sqlite` 
 
 ## Instalasi
 ```bash
-git clone <url-repo-anda> inventory-sales
+git clone https://github.com/maulidingg317-dev/iventory-sales.git inventory-sales
 cd inventory-sales
 composer install
 copy .env.example .env        # Linux/Mac: cp .env.example .env
@@ -207,10 +207,24 @@ php artisan test
 | 14 | Staff membuka detail transaksi milik Admin | 403 |
 
 ## Screenshot
-Taruh screenshot di folder `docs/screenshots/` lalu tautkan di sini:
-`login`, `dashboard`, `daftar produk`, `form penjualan`, `detail transaksi`, `403 untuk staff`.
 
-## Batasan
-- Satu gudang, tanpa retur parsial (pembatalan bersifat penuh per transaksi)
-- Tidak ada pembayaran, diskon, atau pajak
-- Pembulatan nilai uang memakai `round(..., 2)` pada tipe `decimal(15,2)`
+### Login
+![Login](docs/screenshots/01-login.png)
+
+### Dashboard
+![Dashboard](docs/screenshots/02-dashboard.png)
+
+### Produk
+![Produk](docs/screenshots/03-produk.png)
+
+### Transaksi
+![Detail pembelian](docs/screenshots/04-pembelian-detail.png)
+![Form penjualan](docs/screenshots/05-penjualan-form.png)
+![Detail penjualan](docs/screenshots/06-penjualan-detail.png)
+
+### Aturan bisnis dan otorisasi
+![Stok tidak cukup ditolak](docs/screenshots/07-stok-ditolak.png)
+![Staff mendapat 403](docs/screenshots/08-staff-403.png)
+
+### Hasil pengujian
+![Hasil php artisan test](docs/screenshots/09-hasil-test.png)
